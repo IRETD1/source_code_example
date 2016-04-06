@@ -10,7 +10,7 @@ QSharedPointer < Response > StreamReader::readStream( QByteArray &buffer,
 
     QSharedPointer < Response > pResponse( nullptr );
 	
-	info.setReadStatus( ReadStatus::INPUT_DATA_ARE_INCOMPLETE );
+    info.setReadStatus( ReadStatus::INPUT_DATA_ARE_INCOMPLETE );
 	
     QDataStream stream( buffer );
     stream.setVersion( QDataStream::Qt_5_2 );
